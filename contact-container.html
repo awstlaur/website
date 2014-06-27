@@ -15,7 +15,7 @@ $("title").text("Contact")
     <div class="row">
         <div class="col-xs-12 col-md-8">
         <p class="lead contact-info">
-            <img src="images/contact-email-thumb.png"></img>            
+            <img src="images/contact-email-thumb.png" class="img-rounded"></img>            
             <span>
                 <script type="text/javascript">
                      var at = '@';
@@ -28,7 +28,7 @@ $("title").text("Contact")
         </div>
         <div class="col-xs-8 col-md-4">
         <p class="lead contact-info">
-            <img src="images/contact-phone-thumb.png"></img>            
+            <img src="images/contact-phone-thumb.png" class="img-rounded"></img>            
             <span>
                 <script type="text/javascript">
                      var x=1;
@@ -46,13 +46,17 @@ $("title").text("Contact")
     </div>
     
     <a href = "https://www.linkedin.com/pub/alexander-st-laurent/73/960/824">
-    <div class="contactLink"></div>
-    </a>        
+    <div class="contactLink img-rounded"></div>
+    </a>
+    <a href = "https://www.facebook.com/awstlaur">
+    <div class="contactLink img-rounded"></div>
+    </a>          
     
     <script type="text/javascript">
     changeHover($(".contactLink:eq(0)"), "images/contact-linkedin-thumb.png", "images/contact-linkedin-thumb-hover.png");
+    changeHover($(".contactLink:eq(1)"), "images/contact-facebook-thumb.png", "images/contact-facebook-thumb-hover.png");
         
-    function changeHover(selector, normal, hover){
+    function changeHover(selector, hover, normal){
         selector.css("background-image", "url("+normal+")");
         selector.hover(function(){
            $(this).css("background-image", "url("+hover+")");
