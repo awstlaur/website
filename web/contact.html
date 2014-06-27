@@ -62,9 +62,7 @@ $("title").text("Contact")
     <div class="row">
         <div class="col-xs-12 col-md-8">
         <p class="lead contact-info">
-            <a href ="mailto:#">
-                <img src="images/contact-email-thumb.png"></img>
-            </a>
+            <img src="images/contact-email-thumb.png"></img>            
             <span>
                 <script type="text/javascript">
                      var at = '@';
@@ -94,7 +92,22 @@ $("title").text("Contact")
         </div>
     </div>
     
+    <a href = "https://www.linkedin.com/pub/alexander-st-laurent/73/960/824">
+    <div class="contactLink"></div>
+    </a>        
     
+    <script type="text/javascript">
+    changeHover($(".contactLink:eq(0)"), "images/contact-linkedin-thumb.png", "images/contact-linkedin-thumb-hover.png");
+        
+    function changeHover(selector, normal, hover){
+        selector.css("background-image", "url("+normal+")");
+        selector.hover(function(){
+           $(this).css("background-image", "url("+hover+")");
+        },function(){
+            $(this).css("background-image", "url("+normal+")");
+        });
+    }
+    </script>
 
 </div><!-- /.container -->
     <!-- Bootstrap core JavaScript
