@@ -45,16 +45,22 @@ $("title").text("Contact")
         </div>
     </div>
     
+    
     <a href = "https://www.linkedin.com/pub/alexander-st-laurent/73/960/824">
-    <div class="contactLink img-rounded"></div>
-    </a>
+    <div class="contactLink"></div>
+    </a>         
+    
     <a href = "https://www.facebook.com/awstlaur">
-    <div class="contactLink img-rounded"></div>
+    <div class="contactLink"></div>
     </a>          
+    <a href = "https://www.twitter.com/awstlaur">
+    <div class="contactLink"></div>
+    </a> 
     
     <script type="text/javascript">
     changeHover($(".contactLink:eq(0)"), "images/contact-linkedin-thumb.png", "images/contact-linkedin-thumb-hover.png");
     changeHover($(".contactLink:eq(1)"), "images/contact-facebook-thumb.png", "images/contact-facebook-thumb-hover.png");
+    changeHover($(".contactLink:eq(2)"), "images/contact-twitter-thumb.png", "images/contact-twitter-thumb-hover.png");
         
     function changeHover(selector, hover, normal){
         selector.css("background-image", "url("+normal+")");
