@@ -19,8 +19,14 @@ body {
     background: no-repeat;
     height: 56px;
     width: 56px;
+    margin: 0 auto;
 }
 
 .well-mod {
     background-color: #f0f0f0;
+}
+
+.col-centered{
+float: none;
+margin: 0 auto;
 }
