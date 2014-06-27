@@ -15,8 +15,12 @@ body {
   padding: 0px 20x;
 }
 
-.contactLink {
+.contact-link {
     background: no-repeat;
-    height: 54px;
-    width: 54px;
+    height: 56px;
+    width: 56px;
+}
+
+.well-mod {
+    background-color: #f0f0f0;
 }

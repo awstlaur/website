@@ -56,7 +56,7 @@ $("title").text("Contact")
     </div>
 
     <div class="container-fluid starter-template">
-        <h1>Contact</br><small>#hashtag</small></h1>                
+        <h1>Contact</br><small>#hashtag</small></h1>                        
     </div>
     
     <div class="row">
@@ -91,32 +91,60 @@ $("title").text("Contact")
         </p> 
         </div>
     </div>
+
     
     
-    <a href = "https://www.linkedin.com/pub/alexander-st-laurent/73/960/824">
-    <div class="contactLink"></div>
-    </a>         
-    
-    <a href = "https://www.facebook.com/awstlaur">
-    <div class="contactLink"></div>
-    </a>          
-    <a href = "https://www.twitter.com/awstlaur">
-    <div class="contactLink"></div>
-    </a> 
+    <div class="well well-mod"> 
+    <div class="row">
+       <div class="col-xs-6 col-md-3">
+            <!--<a href = "https://www.linkedin.com/pub/alexander-st-laurent/73/960/824">
+            <div id="linkedin" class="contact-link"></div>
+            </a> -->
+            <div id="linkedin" class="contact-link">
+                <a href = "https://www.linkedin.com/pub/alexander-st-laurent/73/960/824">
+                    <img src=""/>
+                </a>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div id="facebook" class="contact-link">    
+                <a href = "https://www.facebook.com/awstlaur">
+                    <img src=""/>            
+                </a> 
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div id="twitter" class="contact-link">
+                <a href = "https://www.twitter.com/awstlaur">
+                    <img src=""/>            
+                </a> 
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div id="twitter2" class="contact-link">
+                <a href = "https://www.twitter.com/awstlaur">
+                    <img src=""/>            
+                </a> 
+            </div> 
+        </div>     
+    </div>
+    </div>
     
     <script type="text/javascript">
-    changeHover($(".contactLink:eq(0)"), "images/contact-linkedin-thumb.png", "images/contact-linkedin-thumb-hover.png");
-    changeHover($(".contactLink:eq(1)"), "images/contact-facebook-thumb.png", "images/contact-facebook-thumb-hover.png");
-    changeHover($(".contactLink:eq(2)"), "images/contact-twitter-thumb.png", "images/contact-twitter-thumb-hover.png");
-        
-    function changeHover(selector, hover, normal){
-        selector.css("background-image", "url("+normal+")");
-        selector.hover(function(){
-           $(this).css("background-image", "url("+hover+")");
-        },function(){
-            $(this).css("background-image", "url("+normal+")");
-        });
-    }
+        changeHover($("#linkedin > a > img"), "images/contact-linkedin-thumb.png", "images/contact-linkedin-thumb-hover.png");
+        changeHover($("#facebook > a > img"), "images/contact-facebook-thumb.png", "images/contact-facebook-thumb-hover.png");
+        changeHover($("#twitter > a > img"), "images/contact-twitter-thumb.png", "images/contact-twitter-thumb-hover.png");
+        changeHover($("#twitter2 > a > img"), "images/contact-twitter-thumb.png", "images/contact-twitter-thumb-hover.png");
+                     
+        function changeHover(selector, hover, normal){
+            selector.attr("src", normal);
+            
+            selector.hover(function(){
+               $(this).attr("src", hover);
+            },function(){
+                $(this).attr("src", normal);               
+            });
+        }
     </script>
 
 </div><!-- /.container -->
