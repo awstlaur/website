@@ -1,5 +1,4 @@
 <script type="text/javascript">
-$("ul.nav > li.active").removeClass("active");
 $("ul.nav > li:eq(4)").addClass("active");
 </script>
 
@@ -11,6 +10,12 @@ $("ul.nav > li:eq(4)").addClass("active");
         <h1>Contact</br><small>#hashtag</small></h1>
     </div>
 
-<p>Reach me at stlaurent.alexander [at] gmail.com</p>
+
+<script type="text/javascript">
+ var name = 'stlaurent.alexander';
+ var at = '@';
+ var domain = 'gmail.com';
+ document.write("<p> Reach me at " + name + at + domain + "</p>");
+ </script>
 
 </div><!-- /.container -->
