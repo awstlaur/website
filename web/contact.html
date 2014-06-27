@@ -14,7 +14,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
     
     <!-- jQuery at beginning for nav-bar changes -->    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -53,17 +53,41 @@ $("ul.nav > li:eq(4)").addClass("active");
     <div class="row text-center">
         <img src="images/contactlogo-thumb.png" alt="#@ logo" class="img-rounded"></p>
     </div>
+
     <div class="starter-template">
         <h1>Contact</br><small>#hashtag</small></h1>
+    
+
+        <p class="contact-info">
+            <a href ="mailto:#">
+                <img src="images/contact-email-thumb.png"></img>
+            </a>
+            <span>
+                <script type="text/javascript">
+                     var at = '@';
+                     var domain = 'gmail.com';
+                     var name = 'stlaurent' + '.' + 'alexander';                      
+                     document.write(name + at + domain);
+                 </script>
+             </span>
+        </p>
+
+        <p class="contact-info">
+            <img src="images/contact-phone-thumb.png"></img>            
+            <span>
+                <script type="text/javascript">
+                     var x=1;
+                     var y=288;
+                     var z=486;
+                     var q=5896; 
+                     var such=y+z;
+                     var hide=y+x;
+                     var wow=q+x+z;                    
+                     document.write("(" + such +") " + hide + "-" + wow);
+                 </script>
+             </span>
+        </p>       
     </div>
-
-
-<script type="text/javascript">
- var name = 'stlaurent.alexander';
- var at = '@';
- var domain = 'gmail.com';
- document.write("<p> Reach me at " + name + at + domain + "</p>");
- </script>
 
 </div><!-- /.container -->
     <!-- Bootstrap core JavaScript

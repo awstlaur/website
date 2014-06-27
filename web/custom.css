@@ -9,3 +9,8 @@ body {
 .padded-body {
   padding: 20px 15px;   
 }
+
+.contact-info {
+  display: inline-block;
+  padding: 0px 16x;
+}
