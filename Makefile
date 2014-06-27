@@ -1,4 +1,4 @@
-web:
+site:
 	make clean
 	touch web/index.html
 	touch web/resume.html
