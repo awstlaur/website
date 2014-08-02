@@ -4,6 +4,8 @@ description: "Math-CS @ Brown University I'm interested in solving interesting, 
 
 url: "localhost:4000"
 
+baseurl: "/~awstlaur"
+
 paginate: 10
 
 markdown: rdiscount

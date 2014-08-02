@@ -10,7 +10,7 @@ $("title").text("{{ site.programming_title }}")
 
 <div class="container padded-body">
     <div class="row text-center">
-        <img src="/images/proglogo-thumb.png" alt=":: logo" class="img-rounded"></p>
+        <img src="{{ site.baseurl }}/images/proglogo-thumb.png" alt=":: logo" class="img-rounded"></p>
     </div>
     <div class="starter-template">
         <h1>Programming</br><small>A means of implementing computer science.</small></h1>            
@@ -27,7 +27,7 @@ $("title").text("{{ site.programming_title }}")
     
     <h3>NegSnell <small><a href="http://awstlaur.github.io/negsnel/">awstlaur.github.io/negsnel</a></small></h3>
     <p>
-    While researching at ICERM (check the <a href="../math.html#neg-snell">blurb</a> on the math page for more info), 
+    While researching at ICERM (check the <a href="{{ site.baseurl }}/math/#neg-snell">blurb</a> on the math page for more info), 
     <a href="http://wphooper.com/">Pat Hooper</a> lent my group a Java application he had written
     the prior summer to visualize ray propogation in periodic tilings of the plane. While researching,
     I added additional functionality to the Java application.
