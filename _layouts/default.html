@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="{{ site.charset }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="{{ site.shortcut_icon }}">
+    <link rel="shortcut icon" href="{{ site.baseurl }}{{ site.shortcut_icon }}">
 
     <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="{{ site.keywords }}">
+    <meta name="author" content="{{ site.author }}">
 
     <title>{{ site.name }}</title>
 
@@ -32,15 +34,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{{ site.baseurl }}/">Alexander St Laurent</a>
+          <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="{{ site.baseurl }}/">Home</a></li>
-            <li><a href="{{ site.baseurl }}/resume">Resume</a></li>
-            <li><a href="{{ site.baseurl }}/math">Math</a></li>
-            <li><a href="{{ site.baseurl }}/programming">Programming</a></li>
-            <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
+            <li id="nav_home"><a href="{{ site.baseurl }}/">Home</a></li>
+            <li id="nav_resume"><a href="{{ site.baseurl }}/resume">Resume</a></li>
+            <li id="nav_math"><a href="{{ site.baseurl }}/math">Math</a></li>
+            <li id="nav_programming"><a href="{{ site.baseurl }}/programming">Programming</a></li>
+            <li id="nav_contact"><a href="{{ site.baseurl }}/contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

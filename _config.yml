@@ -1,5 +1,8 @@
 name: "Alexander St Laurent"
-description: "Math-CS @ Brown University I'm interested in solving interesting, difficult problems, whether those lie in mathematics, algorithms, scripting, or software development. I can also be mildly creative, given sufficient conditions."
+author: "Alexander St Laurent"
+description: "Alex's personal site"
+keywords: "Brown, Brown University, Math, Mathematics, Programming, Programmer, Software, Computer, Computers, Computer Science, Javascript, HTML, CSS, Bootstrap, Java, Python, Git"
+chartset: "utf-8"
 
 
 url: "localhost:4000"
