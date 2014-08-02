@@ -1,0 +1,104 @@
+---
+layout: "default"
+---
+
+<script type="text/javascript">
+$("ul.nav > li:eq(4)").addClass("active");
+$("title").text("{{  site.contact_title  }}")
+</script>
+
+<div class="container padded-body">
+    <div class="row text-center">
+        <img src="/images/contactlogo-thumb.png" alt="#@ logo" class="img-rounded"></p>
+    </div>
+
+    <div class="container-fluid starter-template">
+        <h1>Contact</br><small>#hashtag</small></h1>                        
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12 col-md-8">
+        <p class="lead contact-info">
+            <img src="/images/contact-email-thumb.png" class="img-rounded"></img>            
+            <span>
+                <script type="text/javascript">
+                     var at = '@';
+                     var domain = 'gmail.com';
+                     var name = 'stlaurent' + '.' + 'alexander';                      
+                     document.write(name + at + domain);
+                 </script>
+             </span>
+        </p>
+        </div>
+        <div class="col-xs-8 col-md-4">
+        <p class="lead contact-info">
+            <img src="/images/contact-phone-thumb.png" class="img-rounded"></img>            
+            <span>
+                <script type="text/javascript">
+                     var x=1;
+                     var y=288;
+                     var z=486;
+                     var q=5896; 
+                     var such=y+z;
+                     var hide=y+x;
+                     var wow=q+x+z;                    
+                     document.write("(" + such +") " + hide + "-" + wow);
+                 </script>
+             </span>
+        </p> 
+        </div>
+    </div>
+
+    
+    
+    <div class="well well-mod"> 
+    <div class="row">
+       <div class="col-xs-6 col-md-3">
+            <div id="linkedin" class="contact-link">
+                <a href = "https://www.linkedin.com/pub/alexander-st-laurent/73/960/824">
+                    <img src=""/>
+                </a>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div id="facebook" class="contact-link">    
+                <a href = "https://www.facebook.com/awstlaur">
+                    <img src=""/>            
+                </a> 
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div id="twitter" class="contact-link">
+                <a href = "https://www.twitter.com/awstlaur">
+                    <img src=""/>            
+                </a> 
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div id="googleplus" class="contact-link">
+                <a href = "https://plus.google.com/u/1/111705976705539866564/about/p/pub">
+                    <img src=""/>            
+                </a> 
+            </div> 
+        </div>     
+    </div>
+    </div>
+    
+    <script type="text/javascript">
+        changeHover($("#linkedin > a > img"), "/images/contact-linkedin-thumb.png", "/images/contact-linkedin-thumb-hover.png");
+        changeHover($("#facebook > a > img"), "/images/contact-facebook-thumb.png", "/images/contact-facebook-thumb-hover.png");
+        changeHover($("#twitter > a > img"), "/images/contact-twitter-thumb.png", "/images/contact-twitter-thumb-hover.png");
+        changeHover($("#googleplus > a > img"), "/images/contact-googleplus-thumb.png", "/images/contact-googleplus-thumb-hover.png");
+                     
+        function changeHover(selector, hover, normal){
+            selector.attr("src", normal);
+            
+            selector.hover(function(){
+               $(this).attr("src", hover);
+            },function(){
+                $(this).attr("src", normal);               
+            });
+        }
+    </script>
+
+</div><!-- /.container -->

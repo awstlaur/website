@@ -1,0 +1,32 @@
+body {
+  padding-top: 100px;
+}
+.starter-template {
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.padded-body {
+  padding: 20px 15px;   
+}
+
+.contact-info {
+  display: inline-block;
+  padding: 0px 20x;
+}
+
+.contact-link {
+    background: no-repeat;
+    height: 56px;
+    width: 56px;
+    margin: 0 auto;
+}
+
+.well-mod {
+    background-color: #f0f0f0;
+}
+
+.col-centered{
+float: none;
+margin: 0 auto;
+}

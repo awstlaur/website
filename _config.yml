@@ -1,0 +1,19 @@
+name: "Alexander St Laurent"
+description: "Math-CS @ Brown University I'm interested in solving interesting, difficult problems, whether those lie in mathematics, algorithms, scripting, or software development. I can also be mildly creative, given sufficient conditions."
+
+
+url: "localhost:4000"
+
+paginate: 10
+
+markdown: rdiscount
+permalink: pretty
+
+index_title: "Alexander St Laurent"
+resume_title: "Resume"
+math_title: "Math"
+programming_title: "Programming"
+contact_title: "Contact"
+
+shortcut_icon: "/images/favicon.ico"
+jquery_cdn: "http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"
