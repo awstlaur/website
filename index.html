@@ -2,19 +2,89 @@
 layout: "default"
 ---
 
-<script type="text/javascript">
-$("ul.nav > li#nav_home").addClass("active");
-$("title").text("{{  site.index_title  }}")
-</script>
-
 <div class="container padded-body">
   <div class="row text-center">
-    <img src="{{ site.baseurl }}/images/logo-thumb.png" alt="A.S. logo" class="img-rounded"></p>
-  </div>
+    <img id = "logo" src="{{ site.baseurl }}{{ site.img_dir }}{{ site.index_logo }}" alt="A.S. logo" class="img-rounded" data-toggle="popover" data-placement="left" data-content="Try dragging me to the top of the page!">
   <div class="starter-template">
     <h1>Alexander St Laurent</br><small>Math-CS @ Brown University</small></h1>        
     <p class="lead">I'm interested in solving interesting, difficult problems, whether those lie in mathematics, algorithms, web development, scripting, or software development. I can also be mildly creative, given sufficient conditions. 
     </p>        
   </div>
-
 </div><!-- /.container -->
+
+<script type="text/javascript">
+	$("ul.nav > li#nav_home").addClass("active");
+	$("title").text("{{  site.index_title  }}");
+
+	if($(".sr-only:hidden").length){
+		$("ul.nav > li:not(.active)").each(function(){
+			$(this).attr("data-toggle", "tooltip");
+			$(this).attr("data-placement", "bottom");
+			$(this).attr("title", "The dragging serves no purpose, but there's a link here!");
+			$(this).tooltip({
+				trigger: 'manual'
+			});
+			$(this).data("tooltipShowing", false);
+		});
+		$("ul.nav > li.active").each(function(){
+			$(this).attr("data-toggle", "tooltip");
+			$(this).attr("data-placement", "bottom");
+			$(this).attr("title", "You're already here!");
+			$(this).tooltip({
+				trigger: 'manual'
+			});
+			$(this).data("tooltipShowing", false);
+		});
+		$(function() {
+		    $( "#logo" ).draggable({cursor: "move", zIndex: $(".navbar").css("z-index")+100,
+		    	cursorAt: { top: 37, left: 37 },
+		    	helper: function( event ) {
+		        	return $( "<img src=\"{{ site.baseurl }}{{ site.img_dir }}{{ site.index_logo }}\" {{ site.drag_logo_attr }}>" );
+		      	}});
+		    $( "ul.nav > li > a").droppable({
+		      accept: "#logo",
+		      activeClass: "droppable-active",
+		      hoverClass: "droppable-hover",
+		      drop: function( event, ui ) {
+		        $(this).removeClass("droppable-highlight");
+		        var dest = /nav_(.*)/.exec($(this).parent("li").attr("id"))[1];
+		        var new_img;
+		        switch(dest){
+		        	case "resume":
+		        		new_img = "{{ site.resume_logo }}";
+		        	break;
+		        	case "math":
+		        		new_img = "{{ site.math_logo }}";
+		        	break;
+		        	case "programming":
+		        		new_img = "{{ site.programming_logo }}";
+		        	break;
+		        	case "contact":
+		        		new_img = "{{ site.contact_logo }}";
+		        	break;
+		        	default:
+		        		new_img = "{{ site.index_logo }}";
+		        		break;
+		        }
+		        var new_src = "{{ site.baseurl }}{{ site.img_dir }}" + new_img;
+		        $("#logo").attr("src", new_src);
+		        $( "#logo" ).draggable("option", "helper", function ( event ){
+		        	return $( "<img src=\"" + new_src + "\" {{ site.drag_logo_attr }}>" );
+		        });
+		        $("ul.nav > li").each(function(){
+		        	if($(this).data("tooltipShowing")){
+		        		$(this).tooltip('hide');
+		        		$(this).data("tooltipShowing", false);
+		        	}
+		        });
+		        $(this).parent("li").tooltip('show');
+		        $(this).parent("li").data("tooltipShowing", true);
+		      }
+		    });
+		 });
+
+		$('#logo').popover({
+		  trigger: 'hover'
+		})
+	}
+</script>

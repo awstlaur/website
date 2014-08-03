@@ -16,59 +16,128 @@
     <link href="/~awstlaur/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/~awstlaur/css/custom.css" rel="stylesheet">
+    <link href="/~awstlaur/css/custom.css" rel="stylesheet">  
     
-    <!-- jQuery at beginning for nav-bar changes -->    
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- jQuery and jQuery UI -->    
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="/~awstlaur/js/bootstrap.min.js"></script>
     
   </head>
 
   <body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/~awstlaur/">Alexander St Laurent</a>
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a id = "navbar-brand" class="navbar-brand" href="/~awstlaur/">Alexander St Laurent</a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li id="nav_home"><a href="/~awstlaur/">Home</a></li>
+              <li id="nav_resume"><a href="/~awstlaur/resume">Resume</a></li>
+              <li id="nav_math"><a href="/~awstlaur/math">Math</a></li>
+              <li id="nav_programming"><a href="/~awstlaur/programming">Programming</a></li>
+              <li id="nav_contact"><a href="/~awstlaur/contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
         </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li id="nav_home"><a href="/~awstlaur/">Home</a></li>
-            <li id="nav_resume"><a href="/~awstlaur/resume">Resume</a></li>
-            <li id="nav_math"><a href="/~awstlaur/math">Math</a></li>
-            <li id="nav_programming"><a href="/~awstlaur/programming">Programming</a></li>
-            <li id="nav_contact"><a href="/~awstlaur/contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
       </div>
-    </div>
 
-    <script type="text/javascript">
-$("ul.nav > li#nav_home").addClass("active");
-$("title").text("Alexander St Laurent")
-</script>
-
-<div class="container padded-body">
+    <div class="container padded-body">
   <div class="row text-center">
-    <img src="/~awstlaur/images/logo-thumb.png" alt="A.S. logo" class="img-rounded"></p>
-  </div>
+    <img id = "logo" src="/~awstlaur/images/logo-thumb.png" alt="A.S. logo" class="img-rounded" data-toggle="popover" data-placement="left" data-content="Try dragging me to the top of the page!">
   <div class="starter-template">
     <h1>Alexander St Laurent</br><small>Math-CS @ Brown University</small></h1>        
     <p class="lead">I'm interested in solving interesting, difficult problems, whether those lie in mathematics, algorithms, web development, scripting, or software development. I can also be mildly creative, given sufficient conditions. 
     </p>        
   </div>
-
 </div><!-- /.container -->
 
+<script type="text/javascript">
+	$("ul.nav > li#nav_home").addClass("active");
+	$("title").text("Alexander St Laurent");
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->    
-    <script src="/~awstlaur/js/bootstrap.min.js"></script>
+	if($(".sr-only:hidden").length){
+		$("ul.nav > li:not(.active)").each(function(){
+			$(this).attr("data-toggle", "tooltip");
+			$(this).attr("data-placement", "bottom");
+			$(this).attr("title", "The dragging serves no purpose, but there's a link here!");
+			$(this).tooltip({
+				trigger: 'manual'
+			});
+			$(this).data("tooltipShowing", false);
+		});
+		$("ul.nav > li.active").each(function(){
+			$(this).attr("data-toggle", "tooltip");
+			$(this).attr("data-placement", "bottom");
+			$(this).attr("title", "You're already here!");
+			$(this).tooltip({
+				trigger: 'manual'
+			});
+			$(this).data("tooltipShowing", false);
+		});
+		$(function() {
+		    $( "#logo" ).draggable({cursor: "move", zIndex: $(".navbar").css("z-index")+100,
+		    	cursorAt: { top: 37, left: 37 },
+		    	helper: function( event ) {
+		        	return $( "<img src=\"/~awstlaur/images/logo-thumb.png\" height='75px' width='75px'>" );
+		      	}});
+		    $( "ul.nav > li > a").droppable({
+		      accept: "#logo",
+		      activeClass: "droppable-active",
+		      hoverClass: "droppable-hover",
+		      drop: function( event, ui ) {
+		        $(this).removeClass("droppable-highlight");
+		        var dest = /nav_(.*)/.exec($(this).parent("li").attr("id"))[1];
+		        var new_img;
+		        switch(dest){
+		        	case "resume":
+		        		new_img = "reslogo-thumb.png";
+		        	break;
+		        	case "math":
+		        		new_img = "mathlogo-thumb.png";
+		        	break;
+		        	case "programming":
+		        		new_img = "proglogo-thumb.png";
+		        	break;
+		        	case "contact":
+		        		new_img = "contactlogo-thumb.png";
+		        	break;
+		        	default:
+		        		new_img = "logo-thumb.png";
+		        		break;
+		        }
+		        var new_src = "/~awstlaur/images/" + new_img;
+		        $("#logo").attr("src", new_src);
+		        $( "#logo" ).draggable("option", "helper", function ( event ){
+		        	return $( "<img src=\"" + new_src + "\" height='75px' width='75px'>" );
+		        });
+		        $("ul.nav > li").each(function(){
+		        	if($(this).data("tooltipShowing")){
+		        		$(this).tooltip('hide');
+		        		$(this).data("tooltipShowing", false);
+		        	}
+		        });
+		        $(this).parent("li").tooltip('show');
+		        $(this).parent("li").data("tooltipShowing", true);
+		      }
+		    });
+		 });
+
+		$('#logo').popover({
+		  trigger: 'hover'
+		})
+	}
+</script>
+
+
   </body>
 </html>

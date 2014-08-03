@@ -16,17 +16,27 @@ body {
 }
 
 .contact-link {
-    background: no-repeat;
-    height: 56px;
-    width: 56px;
-    margin: 0 auto;
+  background: no-repeat;
+  height: 56px;
+  width: 56px;
+  margin: 0 auto;
 }
 
 .well-mod {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 .col-centered{
-float: none;
-margin: 0 auto;
+  float: none;
+  margin: 0 auto;
+}
+
+.droppable-active{
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+.droppable-hover {
+  color: #080808 !important;
+  background-color: #fff !important;
 }

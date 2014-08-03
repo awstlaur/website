@@ -20,5 +20,17 @@ math_title: "Math"
 programming_title: "Programming"
 contact_title: "Contact"
 
+img_dir: "/images/"
+
+index_logo: "logo-thumb.png"
+resume_logo: "reslogo-thumb.png"
+math_logo: "mathlogo-thumb.png"
+programming_logo: "proglogo-thumb.png"
+contact_logo: "contactlogo-thumb.png"
+
+
+drag_logo_attr: "height='75px' width='75px'"
+
 shortcut_icon: "/images/favicon.ico"
-jquery_cdn: "http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"
+jquery_cdn: "http://code.jquery.com/jquery-2.1.1.min.js"
+jqueryui_cdn: "https://code.jquery.com/ui/1.11.0/jquery-ui.min.js"

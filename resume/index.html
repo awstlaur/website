@@ -9,12 +9,12 @@ $("title").text("{{ site.resume_title }}");
 
 <div class="container padded-body">
   <div class="row text-center">
-    <img src="{{ site.baseurl }}/images/reslogo-thumb.png" alt="Resume logo" class="img-rounded"></p>
+    <img src="{{ site.baseurl }}{{ site.img_dir }}{{ site.resume_logo }}" alt="Resume logo" class="img-rounded"></p>
   </div>
   <div class="starter-template">
     <h1>Resume</br><small>Now in PDF and TEX!</small></h1>
-    <a class="btn btn-lg btn-primary" href="{{ site.baseurl }}/docs/resume/resume.pdf" role="button">PDF »</a>
-  <a class="btn btn-lg btn-default" href="{{ site.baseurl }}/docs/resume/resume.tex" role="button">TEX »</a>
+    <a class="btn btn-lg btn-default" href="{{ site.baseurl }}/docs/resume/resume.pdf" role="button">PDF</a>
+  <a class="btn btn-lg btn-default" href="{{ site.baseurl }}/docs/resume/resume.tex" role="button">TEX </a>
   </div>
   </div>
   

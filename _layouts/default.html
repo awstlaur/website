@@ -16,43 +16,42 @@
     <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="{{ site.baseurl }}/css/custom.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/css/custom.css" rel="stylesheet">  
     
-    <!-- jQuery at beginning for nav-bar changes -->    
+    <!-- jQuery and jQuery UI -->    
     <script src="{{ site.jquery_cdn }}"></script>
+    <script src="{{ site.jqueryui_cdn }}"></script>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
     
   </head>
 
   <body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a id = "navbar-brand" class="navbar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li id="nav_home"><a href="{{ site.baseurl }}/">Home</a></li>
+              <li id="nav_resume"><a href="{{ site.baseurl }}/resume">Resume</a></li>
+              <li id="nav_math"><a href="{{ site.baseurl }}/math">Math</a></li>
+              <li id="nav_programming"><a href="{{ site.baseurl }}/programming">Programming</a></li>
+              <li id="nav_contact"><a href="{{ site.baseurl }}/contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
         </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li id="nav_home"><a href="{{ site.baseurl }}/">Home</a></li>
-            <li id="nav_resume"><a href="{{ site.baseurl }}/resume">Resume</a></li>
-            <li id="nav_math"><a href="{{ site.baseurl }}/math">Math</a></li>
-            <li id="nav_programming"><a href="{{ site.baseurl }}/programming">Programming</a></li>
-            <li id="nav_contact"><a href="{{ site.baseurl }}/contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
       </div>
-    </div>
 
     {{ content }}
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->    
-    <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
   </body>
 </html>
