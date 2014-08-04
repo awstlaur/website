@@ -1,3 +1,15 @@
+---
+---
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: '{{ site.font_family }}';
+}
+p, div {
+    font-family: '{{ site.font_family }}';
+}
+
+
+
 body {
   padding-top: 100px;
 }
