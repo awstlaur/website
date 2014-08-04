@@ -2,8 +2,9 @@ name: "Alexander St Laurent"
 author: "Alexander St Laurent"
 description: "Alex's personal site"
 keywords: "Brown, Brown University, Math, Mathematics, Programming, Programmer, Software, Computer, Computers, Computer Science, Javascript, HTML, CSS, Bootstrap, Java, Python, Git"
-font_family: "Open Sans"
-font_cdn: "http://fonts.googleapis.com/css?family=Open+Sans"
+
+font_family: "Ubuntu"
+font_cdn: "http://fonts.googleapis.com/css?family=Ubuntu"
 
 
 url: "localhost:4000"
