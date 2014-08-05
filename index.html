@@ -6,7 +6,7 @@ layout: "default"
   <div class="row text-center">
     <img id = "logo" src="{{ site.baseurl }}{{ site.img_dir }}{{ site.index_logo }}" alt="A.S. logo" class="img-rounded" data-toggle="popover" data-placement="left" data-content="Try dragging me to the top of the page!">
   <div class="starter-template">
-    <h1>Alexander St Laurent</br><small>Math-CS @ Brown University</small></h1>        
+    <h1>{{ site.name_smallcaps }}</br><small>Math-CS @ Brown University</small></h1>        
     <p class="lead">I'm interested in solving interesting, difficult problems, whether those lie in mathematics, algorithms, web development, scripting, or software development. I can also be mildly creative, given sufficient conditions. 
     </p>        
   </div>
@@ -16,7 +16,7 @@ layout: "default"
 	$("ul.nav > li#nav_home").addClass("active");
 	$("title").text("{{  site.index_title  }}");
 
-	if($(".sr-only:hidden").length){
+	if(false && $(".sr-only:hidden").length){
 		$("ul.nav > li:not(.active)").each(function(){
 			$(this).attr("data-toggle", "tooltip");
 			$(this).attr("data-placement", "bottom");

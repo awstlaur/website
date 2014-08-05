@@ -1,7 +1,8 @@
-name: "Alexander St Laurent"
+name: "Alex St Laurent"
 author: "Alexander St Laurent"
 description: "Alex's personal site"
 keywords: "Brown, Brown University, Math, Mathematics, Programming, Programmer, Software, Computer, Computers, Computer Science, Javascript, HTML, CSS, Bootstrap, Java, Python, Git"
+name_smallcaps: "<span style='font-variant:small-caps;'>alex st laurent</span>"
 
 font_family: "Ubuntu"
 font_cdn: "http://fonts.googleapis.com/css?family=Ubuntu"
