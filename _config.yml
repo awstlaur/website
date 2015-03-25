@@ -10,8 +10,6 @@ font_cdn: "https://fonts.googleapis.com/css?family=Ubuntu"
 
 url: "localhost:4000"
 
-baseurl: "/~awstlaur"
-
 paginate: 10
 
 markdown: rdiscount
