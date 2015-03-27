@@ -15,7 +15,7 @@ paginate: 10
 markdown: rdiscount
 permalink: pretty
 
-index_title: "Alexander St Laurent"
+index_title: "Alex St Laurent"
 resume_title: "Resume"
 math_title: "Math"
 programming_title: "Programming"

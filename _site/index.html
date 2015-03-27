@@ -57,87 +57,15 @@
   <div class="row text-center">
     <img id = "logo" src="/images/logo-thumb.png" alt="A.S. logo" class="img-rounded" data-toggle="popover" data-placement="left" data-content="Try dragging me to the top of the page!">
   <div class="starter-template">
-    <h1><span style='font-variant:small-caps;'>alex st laurent</span></br><small>Math-CS @ Brown University</small></h1>        
-    <p class="lead">I'm interested in solving interesting, difficult problems, whether those lie in mathematics, algorithms, web development, scripting, or software development. I can also be mildly creative, given sufficient conditions. 
+    <h1><span style='font-variant:small-caps;'>alex st laurent</span></br><small>CS/Math @ Brown University</small></h1>        
+    <p class="lead">I'm interested in solving interesting, difficult problems, whether those lie in web development, scripting, software development, algorithms, or mathematics. I can also be mildly creative, given sufficient conditions. 
     </p>        
   </div>
 </div><!-- /.container -->
 
 <script type="text/javascript">
 	//$("#navbar-brand").css({"color":"#fff", "background-color":"#000"});
-	$("title").text("Alexander St Laurent");
-
-	if(false && $(".sr-only:hidden").length){
-		$("ul.nav > li:not(.active)").each(function(){
-			$(this).attr("data-toggle", "tooltip");
-			$(this).attr("data-placement", "bottom");
-			$(this).attr("title", "The dragging serves no purpose, but there's a link here!");
-			$(this).tooltip({
-				trigger: 'manual'
-			});
-			$(this).data("tooltipShowing", false);
-		});
-		$("ul.nav > li.active").each(function(){
-			$(this).attr("data-toggle", "tooltip");
-			$(this).attr("data-placement", "bottom");
-			$(this).attr("title", "You're already here!");
-			$(this).tooltip({
-				trigger: 'manual'
-			});
-			$(this).data("tooltipShowing", false);
-		});
-		$(function() {
-		    $( "#logo" ).draggable({cursor: "move", zIndex: $(".navbar").css("z-index")+100,
-		    	cursorAt: { top: 37, left: 37 },
-		    	helper: function( event ) {
-		        	return $( "<img src=\"/images/logo-thumb.png\" height='75px' width='75px'>" );
-		      	}});
-		    $( "ul.nav > li > a").droppable({
-		      accept: "#logo",
-		      activeClass: "droppable-active",
-		      hoverClass: "droppable-hover",
-		      drop: function( event, ui ) {
-		        $(this).removeClass("droppable-highlight");
-		        var dest = /nav_(.*)/.exec($(this).parent("li").attr("id"))[1];
-		        var new_img;
-		        switch(dest){
-		        	case "resume":
-		        		new_img = "reslogo-thumb.png";
-		        	break;
-		        	case "math":
-		        		new_img = "mathlogo-thumb.png";
-		        	break;
-		        	case "programming":
-		        		new_img = "proglogo-thumb.png";
-		        	break;
-		        	case "contact":
-		        		new_img = "contactlogo-thumb.png";
-		        	break;
-		        	default:
-		        		new_img = "logo-thumb.png";
-		        		break;
-		        }
-		        var new_src = "/images/" + new_img;
-		        $("#logo").attr("src", new_src);
-		        $( "#logo" ).draggable("option", "helper", function ( event ){
-		        	return $( "<img src=\"" + new_src + "\" height='75px' width='75px'>" );
-		        });
-		        $("ul.nav > li").each(function(){
-		        	if($(this).data("tooltipShowing")){
-		        		$(this).tooltip('hide');
-		        		$(this).data("tooltipShowing", false);
-		        	}
-		        });
-		        $(this).parent("li").tooltip('show');
-		        $(this).parent("li").data("tooltipShowing", true);
-		      }
-		    });
-		 });
-
-		$('#logo').popover({
-		  trigger: 'hover'
-		})
-	}
+	$("title").text("Alex St Laurent");
 </script>
 
 
