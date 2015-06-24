@@ -7,7 +7,6 @@ name_smallcaps: "<span style='font-variant:small-caps;'>alex st laurent</span>"
 font_family: "Ubuntu"
 font_cdn: "https://fonts.googleapis.com/css?family=Ubuntu"
 
-
 url: "localhost:4000"
 
 paginate: 10
@@ -29,9 +28,8 @@ math_logo: "mathlogo-thumb.png"
 programming_logo: "proglogo-thumb.png"
 contact_logo: "contactlogo-thumb.png"
 
-
-drag_logo_attr: "height='75px' width='75px'"
-
 shortcut_icon: "/images/favicon.ico"
 jquery_cdn: "https://code.jquery.com/jquery-2.1.1.min.js"
 jqueryui_cdn: "https://code.jquery.com/ui/1.11.0/jquery-ui.min.js"
+font_awesome_css: "/font-awesome/css/font-awesome.min.css"
+
