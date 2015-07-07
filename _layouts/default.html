@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+  	<title>{{ site.name }}</title>
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge" charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,22 +12,12 @@
     <meta name="keywords" content="{{ site.keywords }}">
     <meta name="author" content="{{ site.author }}">
 
-    <link rel="stylesheet" href="{{ site.baseurl }}{{ site.font_awesome_css }}">
-
-    <title>{{ site.name }}</title>
-
-    <!-- Open Sans -->
-    <link href='{{ site.font_cdn }}' rel='stylesheet' type='text/css'>
-
-    <!-- Bootstrap core CSS -->
-    <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="{{ site.baseurl }}/css/custom.css" rel="stylesheet">  
-    
-    <!-- jQuery and jQuery UI -->    
-    <script src="{{ site.jquery_cdn }}"></script>
-    <script src="{{ site.jqueryui_cdn }}"></script>
+    <link href="{{ site.baseurl }}{{ site.font_awesome_css }}" rel="stylesheet" type="text/css">
+    <link href="{{ site.font_cdn }}" rel="stylesheet" type="text/css">
+    <link href="{{ site.baseurl }}{{ site.style_css }}" rel="stylesheet" type="text/css">  
+       
+    <script src="{{ site.jquery_js }}"></script>
+    <script src="{{ site.jqueryui_js }}"></script>
 
     <!-- Bootstrap core JavaScript-->
     <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
