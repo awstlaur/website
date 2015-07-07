@@ -1,3 +1,6 @@
+collections:
+  - th_pubs_collection
+
 name: "Alex St Laurent"
 author: "Alexander St Laurent"
 description: "Alex's personal site"
@@ -31,5 +34,5 @@ contact_logo: "contactlogo-thumb.png"
 shortcut_icon: "/images/favicon.ico"
 jquery_cdn: "https://code.jquery.com/jquery-2.1.1.min.js"
 jqueryui_cdn: "https://code.jquery.com/ui/1.11.0/jquery-ui.min.js"
-font_awesome_css: "/font-awesome/css/font-awesome.min.css"
+font_awesome_css: "/css/font-awesome.css"
 
