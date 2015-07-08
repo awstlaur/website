@@ -5796,46 +5796,31 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-.padded-body {
-  padding: 16px 6px 12px 6px; }
-
 .btn-inverse {
   color: #fff;
   background-color: #333;
   border-color: #ccc; }
-
-.btn-inverse:hover,
-.btn-inverse:focus,
-.btn-inverse:active,
-.btn-inverse.active,
-.open > .dropdown-toggle.btn-inverse {
-  color: #fff;
-  background-color: #4c4c4c;
-  border-color: #adadad; }
-
-.btn-inverse:active,
-.btn-inverse.active,
-.open > .dropdown-toggle.btn-inverse {
-  background-image: none; }
-
-.btn-inverse.disabled,
-.btn-inverse[disabled],
-fieldset[disabled] .btn-inverse,
-.btn-inverse.disabled:hover,
-.btn-inverse[disabled]:hover,
-fieldset[disabled] .btn-inverse:hover,
-.btn-inverse.disabled:focus,
-.btn-inverse[disabled]:focus,
-fieldset[disabled] .btn-inverse:focus,
-.btn-inverse.disabled:active,
-.btn-inverse[disabled]:active,
-fieldset[disabled] .btn-inverse:active,
-.btn-inverse.disabled.active,
-.btn-inverse[disabled].active,
-fieldset[disabled] .btn-inverse.active {
-  background-color: #333;
-  border-color: #ccc; }
-
-.btn-inverse .badge {
-  color: #333;
-  background-color: #fff; }
+  .btn-inverse:focus, .btn-inverse.focus {
+    color: #fff;
+    background-color: #1a1a1a;
+    border-color: #8c8c8c; }
+  .btn-inverse:hover {
+    color: #fff;
+    background-color: #1a1a1a;
+    border-color: #adadad; }
+  .btn-inverse:active, .btn-inverse.active, .open > .btn-inverse.dropdown-toggle {
+    color: #fff;
+    background-color: #1a1a1a;
+    border-color: #adadad; }
+    .btn-inverse:active:hover, .btn-inverse:active:focus, .btn-inverse:active.focus, .btn-inverse.active:hover, .btn-inverse.active:focus, .btn-inverse.active.focus, .open > .btn-inverse.dropdown-toggle:hover, .open > .btn-inverse.dropdown-toggle:focus, .open > .btn-inverse.dropdown-toggle.focus {
+      color: #fff;
+      background-color: #080808;
+      border-color: #8c8c8c; }
+  .btn-inverse:active, .btn-inverse.active, .open > .btn-inverse.dropdown-toggle {
+    background-image: none; }
+  .btn-inverse.disabled, .btn-inverse.disabled:hover, .btn-inverse.disabled:focus, .btn-inverse.disabled.focus, .btn-inverse.disabled:active, .btn-inverse.disabled.active, .btn-inverse[disabled], .btn-inverse[disabled]:hover, .btn-inverse[disabled]:focus, .btn-inverse[disabled].focus, .btn-inverse[disabled]:active, .btn-inverse[disabled].active, fieldset[disabled] .btn-inverse, fieldset[disabled] .btn-inverse:hover, fieldset[disabled] .btn-inverse:focus, fieldset[disabled] .btn-inverse.focus, fieldset[disabled] .btn-inverse:active, fieldset[disabled] .btn-inverse.active {
+    background-color: #333;
+    border-color: #ccc; }
+  .btn-inverse .badge {
+    color: #333;
+    background-color: #fff; }
