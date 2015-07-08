@@ -7,113 +7,134 @@ $("ul.nav > li#nav_programming").addClass("active");
 $("title").text("{{ site.programming_title }}")
 </script>
 
+<div class="container">
+  <div class="text-center">
+      <img src="{{ site.baseurl }}{{ site.img_dir }}{{ site.programming_logo }}" alt=":: logo" class="img-rounded">
+      <h1>Programming<br/>
+        <small>A means of implementing computer science.</small>
+      </h1>
+  </div>
+              
+  <div class="page-header">
+      <h1>Projects</h1>
+  </div>
 
-<div class="container padded-body">
-    <div class="row text-center">
-        <img src="{{ site.baseurl }}{{ site.img_dir }}{{ site.programming_logo }}" alt=":: logo" class="img-rounded"></p>
-    </div>
-    <div class="starter-template">
-        <h1>Programming</br><small>A means of implementing computer science.</small></h1>            
-    </div>
-
-<div class="page-header">
-    <h1>Projects</h1>
-</div>
-    <h3> Benchmarking the Pyret Language
-        <small> 
-            <a href = "https://github.com/brownplt/pyret-lang/tree/master/tools/benchmark">
-            {% include icon_external_link.html %}
-            </a>
-        </small>
-    </h3>
-    <p>
-    Integrates <a href = "http://benchmarkjs.com">benchmark.js</a> into the Nodejs-based framework of the <a href="http://www.pyret.org/">Pyret Language</a>.
-    </p>
-    <h3>2048 Cubed
-      <small>
-        <a href="http://awstlaur.github.io/2048-cubed/">{% include icon_external_link.html %}</a>
-      </small>
-    </h3>
-    <p>
+  <h3> Benchmarking the Pyret Language
+    <small> 
+      <a href = "https://github.com/brownplt/pyret-lang/tree/master/tools/benchmark">
+        {% include icon_external_link.html %}
+      </a>
+    </small>
+  </h3>
+  <p>
+    Integrates <a href = "http://benchmarkjs.com">benchmark.js</a> 
+    into the Nodejs-based framework of the <a href="http://www.pyret.org/">Pyret Language</a>.
+  </p>
+  <h3> 2048 Cubed
+    <small>
+      <a href="http://awstlaur.github.io/2048-cubed/">
+        {% include icon_external_link.html %}
+      </a>
+    </small>
+  </h3>
+  <p>
     Takes the <a href="http://gabrielecirulli.github.io/2048/">ridiculously popular tile-sliding game</a> into the third
     dimension with WebGL graphics (thanks to <a href="http://threejs.org/">THREE.js</a>).
-    </p>
-    
-    <h3>NegSnell <small><a href="http://awstlaur.github.io/negsnel/">{% include icon_external_link.html %}</a></small></h3>
-    <p>
+  </p>
+  
+  <h3> NegSnell
+    <small>
+      <a href="http://awstlaur.github.io/negsnel/">
+        {% include icon_external_link.html %}
+      </a>
+    </small>
+  </h3>
+  <p>
     While researching at ICERM (check the <a href="{{ site.baseurl }}/math/#neg-snell">blurb</a> on the math page for more info), 
     <a href="http://wphooper.com/">Pat Hooper</a> lent my group a Java application he had written
     the prior summer to visualize ray propogation in periodic tilings of the plane. While researching,
     I added additional functionality to the Java application.
     More recently, I decided to port the whole thing to Javascript, using <a href="http://raphaeljs.com/">Raphael.js</a> for the graphics.
-    </p>
-    
-    <h3>This Website <small>#exciting</small></h3>
-    <p>
+  </p>
+  
+  <h3> This Website
+    <small>#exciting</small>
+  </h3>
+  <p>
     You're already here! Many thanks to <a href="http://getbootstrap.com/">Bootstrap</a> for letting me not deal with that much CSS.
     Also some thanks to <a href="http://jekyllrb.com/">Jekyll</a> as a much better alternative to a makefile which cats files together
     and a bash script that invokes a python http server.
-    </p>
+  </p>
 
-    <h3>GitHub <small><a href="https://github.com/awstlaur/">{% include icon_external_link.html %}</a></small></h3>
-    <p>
+  <h3> GitHub
+    <small>
+      <a href="https://github.com/awstlaur/">
+        {% include icon_external_link.html %}
+      </a>
+    </small>
+  </h3>
+  <p>
     Git is fantastic. It's really helped me branch out.
-    </p>
+  </p>
 
-<div class="page-header">
-    <h1>Experience</h1>
-</div>
-    <h3>athenahealth
-        <small>
-            <a href="http://www.athenahealth.com/">{% include icon_external_link.html %}</a>
-        </small>
-    </h3>
-    <p>
+  <div class="page-header">
+      <h1>Experience</h1>
+  </div>
+
+  <h3> athenahealth
+    <small>
+        <a href="http://www.athenahealth.com/">
+          {% include icon_external_link.html %}
+        </a>
+    </small>
+  </h3>
+  <p>
     Worked for the company in the Summer of 2015 as a software development intern.
-    </p>
+  </p>
 
-    <h3>Members First, Inc.
-        <small>
-            <a href="http://www.membersfirst.com/index.asp">{% include icon_external_link.html %}</a>
-        </small>
-    </h3>
-    <p>
-    Worked for the company in the Summer of 2014 as a development intern. Created dashboards housing data-visualization widgets, wrote SQL functions to amalgamate data, wrote JavaScript which interacted with Google Charts and Google Maps APIs, contributed features to a NodeJS application.
-    </p>
+  <h3>Members First, Inc.
+    <small>
+        <a href="http://www.membersfirst.com/index.asp">
+          {% include icon_external_link.html %}
+        </a>
+    </small>
+  </h3>
+  <p>
+    Worked for the company in the Summer of 2014 as a development intern. Created dashboards housing data-visualization
+    widgets, wrote SQL functions to amalgamate data, wrote JavaScript which interacted with Google Charts and Google Maps APIs, 
+    contributed features to a NodeJS application.
+  </p>
 
-<div class="page-header">
-    <h1>Courses</h1>
+  <div class="page-header">
+      <h1>Courses</h1>
+  </div>
+  <h3>Logic for Hackers <small>CS195Y</small></h3>
+  <p>
+  Used modeling tools and proof assistants (e.g. Alloy, Z3) to model systems and programs, and to prove properties thereof.
+  </p>
+  <h3>Distributed Computing through Combinatorial Topology <small>CS2951S</small></h3>
+  <p>
+  Analyzed distributed and concurrent computing with topological tools.
+  </p>
+  <h3>Programming Languages <small>CS173</small></h3>
+  <p>
+  Explored the principles of modern programming languages by implementation in <a href="http://www.pyret.org/">Pyret</a>.
+  </p>
+  <h3>Computational Topology <small>CS195H</small></h3>
+  <p>
+  Used Matlab to investigate various topological phenomena. Examples: computing homotopies,
+  homology groups.
+  </p>
+  <h3>Intro to Computer Systems <small>CS33</small></h3>
+  <p>
+  Used C and Assembly to learn about systems: storage, cache, processors, threads, etc.
+  </p>
+  <h3>Computer Science: An Integrated Introduction I, II <small>CS17, CS18</small></h3>
+  <p>
+  In the first semester, used Racket and OCaml to learn recursion, higher-order functions,
+  testing, and some algorithms and analysis thereof. In the second semester, used Java and
+  Scala to learn object-oriented programming/design patterns, data structures, and dynamic
+  programming.
+  </p>
 </div>
-    <h3>Logic for Hackers <small>CS195Y</small></h3>
-    <p>
-    Used modeling tools and proof assistants (e.g. Alloy, Z3) to model systems and programs, and to prove properties thereof.
-    </p>
-    <h3>Distributed Computing through Combinatorial Topology <small>CS2951S</small></h3>
-    <p>
-    Analyzed distributed and concurrent computing with topological tools.
-    </p>
-    <h3>Programming Languages <small>CS173</small></h3>
-    <p>
-    Explored the principles of modern programming languages by implementation in <a href="http://www.pyret.org/">Pyret</a>.
-    </p>
-    <h3>Computational Topology <small>CS195H</small></h3>
-    <p>
-    Used Matlab to investigate various topological phenomena. Examples: computing homotopies,
-    homology groups.
-    </p>
-    <h3>Intro to Computer Systems <small>CS33</small></h3>
-    <p>
-    Used C and Assembly to learn about systems: storage, cache, processors, threads, etc.
-    </p>
-    <h3>Computer Science: An Integrated Introduction I, II <small>CS17, CS18</small></h3>
-    <p>
-    In the first semester, used Racket and OCaml to learn recursion, higher-order functions,
-    testing, and some algorithms and analysis thereof. In the second semester, used Java and
-    Scala to learn object-oriented programming/design patterns, data structures, and dynamic
-    programming.
-    </p>
-
-     
-        
-</div><!-- /.container -->                
         

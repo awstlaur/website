@@ -8,49 +8,49 @@ $font-family-sans-serif: "Ubuntu", sans-serif;
 // import bootstrap
 @import "bootstrap";
 
-// custom things
-body {
-  padding-top: 100px;
-}
-.starter-template {
-  padding: 20px 15px;
-  text-align: center;
-}
+// // custom things
+// body {
+//   padding-top: 100px;
+// }
+// .starter-template {
+//   padding: 20px 15px;
+//   text-align: center;
+// }
 
 .padded-body {
-  padding: 20px 15px;   
+  padding: $padding-large-horizontal $padding-base-vertical $padding-base-horizontal $padding-base-vertical;
 }
 
-.contact-info {
-  display: inline-block;
-  padding: 0px 20x;
-}
+// .contact-info {
+//   display: inline-block;
+//   padding: 0px 20x;
+// }
 
-.contact-link {
-  background: no-repeat;
-  height: 56px;
-  width: 56px;
-  margin: 0 auto;
-}
+// .contact-link {
+//   background: no-repeat;
+//   height: 56px;
+//   width: 56px;
+//   margin: 0 auto;
+// }
 
-.well-mod {
-  background-color: #f0f0f0;
-}
+// .well-mod {
+//   background-color: #f0f0f0;
+// }
 
-.col-centered{
-  float: none;
-  margin: 0 auto;
-}
+// .col-centered{
+//   float: none;
+//   margin: 0 auto;
+// }
 
-.droppable-active{
-  color: #ffffff !important;
-  text-decoration: underline;
-}
+// .droppable-active{
+//   color: #ffffff !important;
+//   text-decoration: underline;
+// }
 
-.droppable-hover {
-  color: #080808 !important;
-  background-color: #fff !important;
-}
+// .droppable-hover {
+//   color: #080808 !important;
+//   background-color: #fff !important;
+// }
 
 .btn-inverse {
   color: #fff;
