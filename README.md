@@ -1,0 +1,2 @@
+The directory structure of this repository is that of a standard [Jekyll](http://jekyllrb.com/) project.
+If you are unfamiliar, have a look at the [Jekyll directory structure documentation](http://jekyllrb.com/docs/structure/)

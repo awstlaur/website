@@ -1,5 +1,4 @@
-collections:
-  - th_pubs_collection
+exclude: ["README.md"]
 
 name: "Alex St Laurent"
 author: "Alexander St Laurent"

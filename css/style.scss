@@ -10,9 +10,12 @@ $font-family-sans-serif: "Ubuntu", sans-serif;
 
 // custom things
 
-// switches color and color of .btn-default
+$btn-inverse-color:  $btn-default-bg;
+$btn-inverse-bg:     $btn-default-color;
+$btn-inverse-border: darken($btn-inverse-bg, 5%);
+
 .btn-inverse {
-  @include button-variant($btn-default-bg, $btn-default-color, $btn-default-border);
+  @include button-variant($btn-inverse-color, $btn-inverse-bg, $btn-inverse-border);
 }
 
 // .well-mod {
