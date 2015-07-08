@@ -18,6 +18,14 @@ $btn-inverse-border: darken($btn-inverse-bg, 5%);
   @include button-variant($btn-inverse-color, $btn-inverse-bg, $btn-inverse-border);
 }
 
+$img-main-logo-max-height: 200px;
+
+.img-main-logo {
+  @extend .img-circle;
+  max-height: $img-main-logo-max-height;
+
+}
+
 // .well-mod {
 //   background-color: #f0f0f0;
 // }

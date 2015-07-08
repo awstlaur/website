@@ -21,11 +21,11 @@ contact_title: "Contact"
 
 img_dir: "/images/"
 
-index_logo: "logo-thumb.png"
-resume_logo: "reslogo-thumb.png"
-math_logo: "mathlogo-thumb.png"
-programming_logo: "proglogo-thumb.png"
-contact_logo: "contactlogo-thumb.png"
+index_logo: "logo.png"
+resume_logo: "reslogo.png"
+math_logo: "mathlogo.png"
+programming_logo: "proglogo.png"
+contact_logo: "contactlogo.png"
 
 shortcut_icon: "/images/favicon.ico"
 jquery_js: "/js/jquery-2.1.4.min.js"

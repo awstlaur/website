@@ -1121,7 +1121,7 @@ img {
   max-width: 100%;
   height: auto; }
 
-.img-circle {
+.img-circle, .img-main-logo {
   border-radius: 50%; }
 
 hr {
@@ -5824,3 +5824,6 @@ button.close {
   .btn-inverse .badge {
     color: #333;
     background-color: #fff; }
+
+.img-main-logo {
+  max-height: 200px; }
