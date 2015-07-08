@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500&subset=latin,latin-ext);
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -1068,7 +1069,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -5172,7 +5173,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5278,7 +5279,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5795,12 +5796,6 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-h1, h2, h3, h4, h5, h6 {
-  font-family: Ubuntu; }
-
-p, div {
-  font-family: Ubuntu; }
-
 body {
   padding-top: 100px; }
 

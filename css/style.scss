@@ -1,21 +1,14 @@
 ---
 ---
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500&subset=latin,latin-ext);
 
+// override bootstrap variables
+$font-family-sans-serif: "Ubuntu", sans-serif;
+
+// import bootstrap
 @import "bootstrap";
 
-@mixin font-stack {
-  font-family: Ubuntu;  
-}
-
-h1, h2, h3, h4, h5, h6 {
-    @include font-stack;
-}
-p, div {
-    @include font-stack;
-}
-
-
-
+// custom things
 body {
   padding-top: 100px;
 }

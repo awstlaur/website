@@ -7,8 +7,6 @@ description: "Alex's personal site"
 keywords: "Brown, Brown University, Math, Mathematics, Programming, Programmer, Software, Computer, Computers, Computer Science, Javascript, HTML, CSS, Bootstrap, Perl, Java, Python, Git"
 name_smallcaps: "<span style='font-variant:small-caps;'>alex st laurent</span>"
 
-font_cdn: "https://fonts.googleapis.com/css?family=Ubuntu"
-
 url: "localhost:4000"
 
 paginate: 10
