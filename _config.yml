@@ -8,8 +8,6 @@ name_smallcaps: "<span style='font-variant:small-caps;'>alex st laurent</span>"
 
 url: "localhost:4000"
 
-paginate: 10
-
 markdown: rdiscount
 permalink: pretty
 
