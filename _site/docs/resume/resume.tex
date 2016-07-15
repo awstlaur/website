@@ -1,127 +1,161 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % LaTeX file for resume 
 % This file uses the resume document class (res.cls)
 
-\documentclass{res} 
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-\usepackage{newcent}   % uses new century schoolbook postscript font 
+\documentclass{res}
+\usepackage{newcent}           % uses new century schoolbook postscript font 
 \setlength{\textheight}{9.5in} % increase text height to fit on 1-page 
 \addtolength{\voffset}{-30pt}
 \addtolength{\textheight}{30pt}
-%\newsectionwidth{25pt}
 
+%% Obfuscated phone number
+\newcommand{\myNumber}{
+    \char'050 \char'067 \char'067 \char'064 \char'051
+    ~
+    \char'062 \char'070 \char'071
+    \char'055
+    \char'071 \char'064 \char'071 \char'070
+}
 
-\begin{document}    
+%% Obfuscated address
+\newcommand{\myAddressOne}{\char'062 \char'065}
+\newcommand{\myAddressTwo}{\char'120 \char'154 \char'151 \char'155 \char'160 \char'164 \char'157 \char'156}
+\newcommand{\myAddressThree}{\char'101 \char'166 \char'145 \char'156 \char'165 \char'145}
+\newcommand{\myAddress}{\myAddressOne~\myAddressTwo~\myAddressThree}
 
-\name{\centerline{ALEXANDER ST LAURENT}\\\centerline{stlaurent.alexander@gmail.com}\\\centerline{(774) 289-6383}\\\\\centerline{awstlaurent.com}\\\\}
-
-\address{\bf  {\sc Campus Address}\\69 Brown Street, Box 7082\\ Providence, RI 02912}
-\address{\bf {\sc Permanent Address} \\25 Plimpton Avenue\\Sturbridge, MA 01566}
-
-%% LINE BREAK DEF'S
+%% Formatting
 \newcommand{\myvspace}{\vspace{-0.09in}} %-0.1
 \newcommand{\sectionVspace}{\vspace{-0.40in}}
 \newcommand{\sbreak}{\\[-0.15in]}
-%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}    
+
+\name{
+    \centerline{ALEXANDER ST LAURENT}\\
+    \tabularnewline
+    \centerline{stlaurent.alexander@gmail.com}\\
+    \centerline{\myNumber}\\
+    \\
+    \centerline{awstlaurent.com}\\
+    \\
+}
+
+\address{
+    \bf
+    {\sc Campus Address}\\
+    69 Brown Street, Box 7082\\
+    Providence, RI 02912
+}
+
+\address{
+    \bf
+    {\sc Permanent Address}\\
+    \myAddress\\
+    Sturbridge, MA 01566
+}
 
 \begin{resume}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% EDUCATION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \myvspace
-\section{EDUCATION}     
-\myvspace
-\begin{tabbing}
-AAAA\=AAAA\=AAAA\=AAAA\=AAAA\kill
-{\bf Brown University} $\cdot$ Providence, RI $\cdot$ May 2017\\
-	\>Bachelor of Science, Computer Science\textemdash Mathematics\\
-	%\>Cumulative GPA: 3.75/4.00 (among degree-related courses)\\
-\sbreak
-{\bf Tantasqua Regional High School} $\cdot$ Fiskdale, MA $\cdot$ June 2011\\%\>GPA: 4.86/5.00, Rank 3\textsuperscript{rd}/291\\
+\section{EDUCATION} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \myvspace
+    \begin{tabbing}
+        ABCD\=ABCD\=ABCD\=ABCD\=ABCD\kill
+        {\bf Brown University} $\cdot$ Providence, RI $\cdot$ May 2017\\
+            \>Bachelor of Science, Computer Science\textemdash Mathematics\\
+        \sbreak
+        {\bf Tantasqua Regional High School} $\cdot$ Fiskdale, MA $\cdot$ June 2011\\
+        %\>GPA: 4.86/5.00, Rank 3\textsuperscript{rd}/291\\
 \end{tabbing}
-\sectionVspace %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{EMPLOYMENT \& EXPERIENCE}
+\sectionVspace
+\section{EMPLOYMENT \& EXPERIENCE} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    \myvspace
    \begin{tabbing}
-   AAAA\=AAAA\=AAAA\=AAAA\=AAAA\kill
- {\bf Software Developer Intern} $\cdot$ athenahealth $\cdot$ Watertown, MA $\cdot$ June 2015--August 2015\\
- 	\>$\bullet$ Worked on an internal project management tool.\\
- 	\>$\bullet$ Wrote Perl back-end and Javascript front-end.\\
- 	\>$\bullet$ Organized and refactored existing code into a model--view--controller design.\\
- \sbreak
- {\bf Web Development Intern} $\cdot$ MembersFirst, Inc. $\cdot$ Wayland, MA $\cdot$ July 2014--August 2014\\
-	\>$\bullet$ Created dashboards housing data-visualization widgets.\\
-	\>$\bullet$ Wrote SQL functions to query and amalgamate data.\\
-	\>$\bullet$ Wrote JavaScript which interacted with the Google Charts and Google Maps APIs.\\
-	\>$\bullet$ Contributed features to a NodeJS application.\\
- \sbreak
- {\bf Server Administrator} $\cdot$ Technology House, Inc. $\cdot$ Providence, RI $\cdot$ Spring 2013--present\\
- 	\>$\bullet$ Volunteered as a sysadmin for the program house's Debian server.\\
- 	\>$\bullet$ Created user accounts, assisted users with email and other issues.\\
- 	\>$\bullet$ Made changes with Tweak, a configuration management tool\\
- 		\>\phantom{$\bullet$} also used by the Brown CS Department.\\
- \sbreak
- {\bf Teaching Assistant} $\cdot$ Brown Computer Science $\cdot$ Providence, RI\\
- 	\>Fall 2015   ~~~~~{\em Programming Languages}\\
- 	\>Spring 2013 {\em Introduction to Discrete Structures and Probability}\\
-	\>Spring 2012 {\em Introduction to Scientific Computing and Problem Solving}\\
-	\>$\bullet$  Assisted students individually.\\
-	\>$\bullet$  Graded programs and assignments;.\\
-	% \>$\bullet$  Ensured assignments and TA solutions were well-written and accurate.\\
-\sbreak
-{\bf Consultant} $\cdot$ Brown Computer Science $\cdot$ Providence, RI $\cdot$ Spring 2013--present\\
-	\>{\em Consultant for the Sunlab and MSlab}\\
-	\>$\bullet$ Supported the machines and users in these two high-traffic computer labs.\\
-	\>$\bullet$ Provided technical support to users for Linux- and department-related issues.\\
-	\>$\bullet$ Served as  liaison between users and the department technical staff.\\
-\sbreak
-{\bf Undergraduate Researcher} $\cdot$ ICERM $\cdot$ Providence, RI $\cdot$ Summer 2013\\
-	\>$\bullet$ Worked with Diana Davis, P.h.D (Brown '13) and Professor Chaim Goodman-Strauss\\\>\phantom{$\bullet$} on an open problem in planar geometric dynamical systems.\\
-	\>$\bullet$ Submmitted a preprint to the arXiv.\\	
-% \sbreak	
-% {\bf Undergraduate Researcher} $\cdot$ Brown Applied Mathematics $\cdot$ Providence, RI $\cdot$ Summer 2012\\
-% %\>{\em Chip-firing on simplicial complexes}\\
-% \>$\bullet$ Worked with Professor Caroline Klivans on an open problem in algebraic topology.\\
-
-
-
+        ABCD\=ABCD\=ABCD\=ABCD\=ABCD\=ABCD\=ABCD\=ABCD\kill
+        {\bf Software Developer Intern} $\cdot$ Onshape $\cdot$ Cambridge, MA $\cdot$ May 2016--August 2016\\
+            \>$\bullet$ Developed user-facing, browser-client features in a cloud-based CAD system.\\
+            \>$\bullet$ Worked primarily in JavaScript, using jQuery, Backbone, Angular, and WebGL.\\
+            \>$\bullet$ Worked under fast-paced, test-driven, agile development in a large code-base.\\
+        \sbreak
+        {\bf Software Developer Intern} $\cdot$ athenahealth $\cdot$ Watertown, MA $\cdot$ June 2015--August 2015\\
+            \>$\bullet$ Worked on an internal project management tool.\\
+            \>$\bullet$ Wrote Perl back-end and JavaScript front-end.\\
+            \>$\bullet$ Organized and refactored existing code into a model--view--controller design.\\
+        \sbreak
+        {\bf Web Development Intern} $\cdot$ MembersFirst, Inc. $\cdot$ Wayland, MA $\cdot$ July 2014--August 2014\\
+            \>$\bullet$ Created web-dashboards housing data-visualization widgets.\\
+            \>$\bullet$ Wrote SQL functions to query and amalgamate data.\\
+            \>$\bullet$ Wrote JavaScript which interacted with the Google Charts and Google Maps APIs.\\
+        \sbreak
+        {\bf Server Administrator} $\cdot$ Technology House, Inc. $\cdot$ Providence, RI $\cdot$ Spring 2013--present\\
+            \>$\bullet$ Volunteered as a sysadmin for the program house's Debian server.\\
+            \>$\bullet$ Created user accounts, assisted users with email, passwords, and other issues.\\
+            \>$\bullet$ Made changes with Tweak, a configuration management tool\\
+            \>\phantom{$\bullet$} also used by the Brown Computer Science Department.\\
+        \sbreak
+        {\bf Teaching Assistant} $\cdot$ Brown Computer Science $\cdot$ Providence, RI $\cdot$ Various semesters\\
+            \>Fall   2015, 2016 \>\>\> {\em Programming Languages}\\
+            \>Spring 2013, 2015 \>\>\> {\em Introduction to Discrete Structures and Probability}\\
+            \>Spring 2012       \>\>\> {\em Introduction to Scientific Computing and Problem Solving}\\
+            \>$\bullet$  Assisted students individually.\\
+            \>$\bullet$  Graded programs and assignments.\\
+        \sbreak
+        {\bf Consultant} $\cdot$ Brown Computer Science $\cdot$ Providence, RI $\cdot$ Spring 2013--present\\
+            \>{\em Consultant for the Sunlab and MSlab}\\
+            \>$\bullet$ Supported the machines and users in these two high-traffic computer labs.\\
+            \>$\bullet$ Provided technical support to users for Linux- and department-related issues.\\
+            \>$\bullet$ Served as  liaison between users and the department technical staff.\\
+        % \sbreak
+        % {\bf Undergraduate Researcher} $\cdot$ ICERM $\cdot$ Providence, RI $\cdot$ Summer 2013\\
+        %     \>$\bullet$ Worked with Diana Davis, P.h.D (Brown '13) and Professor Chaim Goodman-Strauss\\\>\phantom{$\bullet$} on an open problem in planar geometric dynamical systems.\\
+        %     \>$\bullet$ Submmitted a preprint to the arXiv.\\    
+        % \sbreak    
+        % {\bf Undergraduate Researcher} $\cdot$ Brown Applied Mathematics $\cdot$ Providence, RI $\cdot$ Summer 2012\\
+        %     \>{\em Chip-firing on simplicial complexes}\\
+        %     \>$\bullet$ Worked with Professor Caroline Klivans on an open problem in algebraic topology.\\
    \end{tabbing}
-\sectionVspace %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{TECHNICAL SKILLS \& PROJECTS}
-\myvspace
-\begin{tabbing}
-   AAAA\=AAAA\=AAAA\=AAAA\=AAAA\kill
-{\bf Selected projects}\\
-	\>$\bullet$ ``Bencharmarking Pyret," collection of performance data of the Pyret\\
-	\>\phantom{$\bullet$}language, in JavaScript with NodeJS.\\
-	\>$\bullet$ ``2048 Cubed," a three-dimensional version of the viral game, in JavaScript.\\
-	\>$\bullet$ ``Neg Snell," a port of an existing (Java) simulator for negative-refraction\\
-		\>\phantom{$\bullet$} light trajectories through tilings, in JavaScript.\\
-	\>$\bullet$ ``Rackette," an interpreter for a subset of the Racket language, in OCaml.\\
-	% \>$\bullet$ ``Sparkzilla," a graphical web browser and server for a subset of HTML, in Java.\\	
-\sbreak
-{\bf Languages, etc.}\\
-  \>$\bullet$ JavaScript/jQuery/NodeJS, HTML/CSS, SQL\\
-  \>$\bullet$ Perl, Python, Java, Matlab, C\\
-  \>$\bullet$ Racket/Scheme, OCaml\\
-  \>$\bullet$ Git, Perforce, Make\\
-	%\>$\bullet$ Document creation: Office suites (e.g. Microsoft Office, Libre Office, OpenOffice), \\\>\phantom{$\bullet$} typesetting in latex, standard image-editing (e.g. GIMP), audio editing 
-%\\\>\phantom{$\bullet$} (e.g. Audacity).\\
-%	\>$\bullet$ Operating systems: Linux/Unix, Windows, Mac OS.\\
-%	\>$\bullet$ Mathematical computing: Matlab, Mathematica, Sage.\\
-\end{tabbing}
-% \sectionVspace %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{LEADERSHIP}
-% \myvspace
-% \begin{tabbing}
-%    AAAA\=AAAA\=AAAA\=AAAA\=AAAA\kill
-% {\bf DUG Officer} $\cdot$ Brown Mathematics $\cdot$ Providence, RI $\cdot$ Fall 2012--Fall 2014\\
-% 	\>{\em Math Departmental Undergraduate Group (Math DUG)}\\
-% 	\>$\bullet$ Organized various talks given by students and faculty throughout the semester. \\
-% 	\>$\bullet$ Organized the annual Symposium for Undergraduates in the Mathematical Sciences (SUMS).\\
-% \sbreak
-% {\bf Section Leader} $\cdot$ The Brown Band $\cdot$ Providence, RI $\cdot$ Fall 2012--Fall 2013\\
-% 	\>{\em Percussion section of the official band of the university}\\
-% 	\>$\bullet$ Maintained instruments, tools, equipment, and sheet music.\\ 
-% 	%\>$\bullet$ Held weekly section rehearsal outside of band rehearsal.\\
-% 	%\>$\bullet$ Kept the section informed, motivated, and nourished.\\
-% \end{tabbing}
-
+\sectionVspace
+\section{PROJECTS \& COURSES} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \myvspace
+    \begin{tabbing}
+        ABCD\=ABCD\=ABCD\=ABCD\=ABCD\kill
+        {\bf Selected projects}\\
+            \>$\bullet$ ``Pyret.org Auto-grading,'' (in-progress) web-based automated grading of Pyret\\
+                \>\phantom{$\bullet$} assignments, interacting with Google Drive APIs.\\
+            \>$\bullet$ ``Refined Remora,'' (in-progress) refinement type system.\\
+            \>$\bullet$ ``Benchmarking Pyret,'' collection of performance data of the Pyret language.\\
+            \>$\bullet$ ``2048 Cubed,'' a three-dimensional version of the viral game, in JavaScript.\\
+            \>$\bullet$ ``Neg Snell,'' a port of an existing (Java) simulator for negative-refraction\\
+                \>\phantom{$\bullet$} light trajectories through tilings, in JavaScript.\\
+            % \>$\bullet$ ``Rackette,'' an interpreter for a subset of the Racket language, in OCaml.\\
+            % \>$\bullet$ ``Sparkzilla,'' a graphical web browser and server for a subset of HTML, in Java.\\
+        {\bf Selected courses}\\
+            \>$\bullet$ Operating Systems, Programming Languages\\
+            \>$\bullet$ Cryptography, Models of Computation, Logic for Systems\\
+            \>$\bullet$ Computational Topology
+    \end{tabbing}
+% \sectionVspace
+% \section{LEADERSHIP} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     \myvspace
+%     \begin{tabbing}
+%         ABCD\=ABCD\=ABCD\=ABCD\=ABCD\kill
+%         {\bf DUG Officer} $\cdot$ Brown Mathematics $\cdot$ Providence, RI $\cdot$ Fall 2012--Fall 2014\\
+%             \>{\em Math Departmental Undergraduate Group (Math DUG)}\\
+%             \>$\bullet$ Organized various talks given by students and faculty throughout the semester. \\
+%             \>$\bullet$ Organized the annual Symposium for Undergraduates in the Mathematical Sciences (SUMS).\\
+%         \sbreak
+%         {\bf Section Leader} $\cdot$ The Brown Band $\cdot$ Providence, RI $\cdot$ Fall 2012--Fall 2013\\
+%             \>{\em Percussion section of the official band of the university}\\
+%             \>$\bullet$ Maintained instruments, tools, equipment, and sheet music.\\ 
+%             %\>$\bullet$ Held weekly section rehearsal outside of band rehearsal.\\
+%             %\>$\bullet$ Kept the section informed, motivated, and nourished.\\
+%     \end{tabbing}
 \end{resume}
 \end{document}
