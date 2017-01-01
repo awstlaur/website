@@ -27,8 +27,8 @@ programming_logo: "proglogo.png"
 contact_logo: "contactlogo.png"
 
 shortcut_icon: "/images/favicon.ico"
-jquery_js: "/js/jquery-2.1.4.min.js"
-jqueryui_js: "/js/jquery-ui.min.js"
-font_awesome_css: "/css/font-awesome.css"
+jquery_js: "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"
+jqueryui_js: "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js"
+font_awesome_css: "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
 style_css: "/css/style.css"
 
