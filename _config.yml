@@ -1,5 +1,7 @@
 source: "docs"
 destination: "_site"
+github:
+  test: "Will this show up on github?"
 
 name: "Alex St Laurent"
 author: "Alexander St Laurent"
