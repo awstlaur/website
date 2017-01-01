@@ -4,12 +4,12 @@ layout: "default"
 
 <script type="text/javascript">
 $("ul.nav > li#nav_contact").addClass("active");
-$("title").text("{{  site.contact_title  }}")
+$("title").text("Contact")
 </script>
 
 <div class="container">
     <div class="text-center">
-        <img src="{{ site.baseurl }}{{ site.img_dir }}{{ site.contact_logo }}" alt="#@ logo" class="img-main-logo"></p>
+        <img src="{{ site.baseurl }}/images/contactlogo.png" alt="#@ logo" class="img-main-logo"></p>
         <div class="container-fluid starter-template">
         <h1>Contact</br><small>#octothorpe</small></h1>                        
     </div>
@@ -20,7 +20,7 @@ $("title").text("{{  site.contact_title  }}")
     <div class="row">
         <div class="col-xs-12 col-md-8">
         <p class="lead contact-info">
-            <img src="{{ site.baseurl }}{{ site.img_dir }}contact-email-thumb.png" class="img-circle"></img>            
+            <img src="{{ site.baseurl }}/images/contact-email-thumb.png" class="img-circle"></img>            
             <span>
                 <script type="text/javascript">
                      var at = '@';
@@ -33,7 +33,7 @@ $("title").text("{{  site.contact_title  }}")
         </div>
         <div class="col-xs-8 col-md-4">
         <p class="lead contact-info">
-            <img src="{{ site.baseurl }}{{ site.img_dir }}contact-phone-thumb.png" class="img-circle"></img>            
+            <img src="{{ site.baseurl }}/images/contact-phone-thumb.png" class="img-circle"></img>            
             <span>
                 <script type="text/javascript">
                      var x=1;
@@ -87,10 +87,10 @@ $("title").text("{{  site.contact_title  }}")
     -->
     
     <script type="text/javascript">
-        changeHover($("#linkedin > a > img"), "{{ site.baseurl }}{{ site.img_dir }}contact-linkedin-thumb.png", "{{ site.baseurl }}{{ site.img_dir }}contact-linkedin-thumb-hover.png");
-        changeHover($("#facebook > a > img"), "{{ site.baseurl }}{{ site.img_dir }}contact-facebook-thumb.png", "{{ site.baseurl }}{{ site.img_dir }}contact-facebook-thumb-hover.png");
-        changeHover($("#twitter > a > img"), "{{ site.baseurl }}{{ site.img_dir }}contact-twitter-thumb.png", "{{ site.baseurl }}{{ site.img_dir }}contact-twitter-thumb-hover.png");
-        changeHover($("#googleplus > a > img"), "{{ site.baseurl }}{{ site.img_dir }}contact-googleplus-thumb.png", "{{ site.baseurl }}{{ site.img_dir }}contact-googleplus-thumb-hover.png");
+        changeHover($("#linkedin > a > img"), "{{ site.baseurl }}/images/contact-linkedin-thumb.png", "{{ site.baseurl }}/images/contact-linkedin-thumb-hover.png");
+        changeHover($("#facebook > a > img"), "{{ site.baseurl }}/images/contact-facebook-thumb.png", "{{ site.baseurl }}/images/contact-facebook-thumb-hover.png");
+        changeHover($("#twitter > a > img"), "{{ site.baseurl }}/images/contact-twitter-thumb.png", "{{ site.baseurl }}/images/contact-twitter-thumb-hover.png");
+        changeHover($("#googleplus > a > img"), "{{ site.baseurl }}/images/contact-googleplus-thumb.png", "{{ site.baseurl }}/images/contact-googleplus-thumb-hover.png");
                      
         function changeHover(selector, hover, normal){
             selector.attr("src", normal);
